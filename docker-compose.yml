@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  backend:
+    container_name: codeigniter
+    build:
+      context: .
+      dockerfile: DockerFile
+    volumes:
+      - "./index.php:/var/www/index.php"
+    ports:
+      - "8082:80"
