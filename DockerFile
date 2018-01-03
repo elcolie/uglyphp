@@ -12,7 +12,7 @@ RUN chown www-data:www-data /var/www
 
 RUN rm /var/www/index.html
 
-COPY application ./applications
+COPY application ./application
 COPY system ./system
 
 #COPY index.php .
